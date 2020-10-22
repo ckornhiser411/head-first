@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>IRock- The Vitrual Pet Rock</title>
+        <script type ="text/javascript">
+                function touchRock(){
+                    var userName = prompt("What is your name?", "Enter your name here.");
+
+                    if (userName) {
+                        alert("It is good to meet you, " + userName + ".");
+                        document.getElementById("rockImg").src = "rock_happy.png";
+                    }
+
+                }
+            </script>
+    </head>
+
+    <body onload="alert('Hello, I am your pet rock.') ;">
+        <div style ="margin-top:100px; text-align:center">
+            <!--insert the iroc img --> 
+            <img id="rockImg" src="rock.png" alt = "IRock" style="cursor:pointer"
+            onclick="touchRock();"/>
+            
+                
+        
+        </div>
+    </body>
+</html>         
